@@ -2,5 +2,5 @@
 
 
 ```sh
-npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+npx @tailwindcss/cli -i ./input.css -o ./output.css --watch
 ```
