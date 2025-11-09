@@ -254,6 +254,9 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-\[64px\] {
+    height: 64px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -262,6 +265,9 @@
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-\[64px\] {
+    width: 64px;
   }
   .max-w-5xl {
     max-width: var(--container-5xl);
@@ -410,6 +416,9 @@
   .to-slate-900 {
     --tw-gradient-to: var(--color-slate-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
