@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/', // GitHub Pages 用户页仓库，根路径
   plugins: [
     vue(),
     vueDevTools(),
