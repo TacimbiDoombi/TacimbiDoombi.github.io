@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+/* 避免不同页面出现/消失垂直滚动条导致的水平位移（Windows 下尤为明显） */
+@layer base {
+	html {
+		scrollbar-gutter: stable;
+	}
+}
+

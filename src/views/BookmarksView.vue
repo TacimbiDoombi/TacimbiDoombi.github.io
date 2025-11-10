@@ -1,16 +1,15 @@
 <template>
-    <div class="min-h-screen text-gray-900 font-sans">
-        <div class="mx-auto max-w-5xl px-4 py-8">
-            <h1 class="text-3xl font-bold mb-6 text-center">Bookmark Navigation</h1>
-            <div v-for="group in bookmarkGroups" :key="group.title" class="mb-10">
-                <h2 class="text-xl font-semibold mb-4 text-gray-800">{{ group.title }}</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <a v-for="item in group.items" :key="item.name" :href="item.url" target="_blank" rel="noopener"
-                        class="block bg-white rounded-xl shadow hover:shadow-lg transition p-4 border border-gray-100 hover:border-blue-400">
-                        <div class="font-medium text-base mb-1">{{ item.name }}</div>
-                        <div class="text-xs text-gray-500">{{ item.desc }}</div>
-                    </a>
-                </div>
+    <!-- 复用 App.vue 提供的主容器，只添加垂直内边距 -->
+    <div class="py-16">
+        <h1 class="text-3xl font-bold mb-8 text-center">Bookmark Navigation</h1>
+        <div v-for="group in bookmarkGroups" :key="group.title" class="mb-12">
+            <h2 class="text-xl font-semibold mb-4 text-neutral-800">{{ group.title }}</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a v-for="item in group.items" :key="item.name" :href="item.url" target="_blank" rel="noopener"
+                    class="group block rounded-xl border border-neutral-200 bg-white p-4 shadow-sm hover:shadow-md transition hover:border-blue-400">
+                    <div class="font-medium text-base mb-1 group-hover:text-blue-700">{{ item.name }}</div>
+                    <div class="text-xs text-neutral-500">{{ item.desc }}</div>
+                </a>
             </div>
         </div>
     </div>

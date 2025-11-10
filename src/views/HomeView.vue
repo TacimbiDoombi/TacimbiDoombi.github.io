@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <main class="mx-auto max-w-5xl px-4">
+    <!-- 内容容器已在 App.vue 提供，这里只保留页面内容结构 -->
       <!-- Hero -->
       <section class="py-16 sm:py-24">
         <div class="space-y-4">
@@ -60,7 +60,5 @@
           </p>
         </div>
       </section>
-    </main>
-
-
+    
 </template>
