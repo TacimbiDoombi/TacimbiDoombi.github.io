@@ -51,6 +51,7 @@ const bookmarkGroups = [
             { name: "版权", url: "https://creativecommons.org/", desc: "知识共享协议官网" },
             { name: "LaTeX Live", url: "https://www.latexlive.com", desc: "在线 LaTeX 编辑器" },
             { name: "使用 GitHub Actions 自动发布 PyPI", url: "https://medium.com/@VersuS_/automate-pypi-releases-with-github-actions-4c5a9cfe947d", desc: "PyPI 发布自动化指南" },
+            { name: "Excalidraw（在线白板）", url: "https://excalidraw.com", desc: "在线白板" },
         ],
     },
     {
