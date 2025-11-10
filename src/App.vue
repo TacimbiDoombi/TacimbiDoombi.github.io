@@ -1,14 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-
-
-  <!-- <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/about">About</RouterLink> -->
-  <RouterView />
+  <div class="min-h-screen bg-white text-neutral-900 font-sans antialiased">
+    <header class="sticky top-0 bg-white/80 backdrop-blur border-b border-neutral-200">
+      <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+        <RouterLink to="/" class="font-medium inline-flex items-center gap-2">
+          <span>Abka TacimbiDoombi</span>
+        </RouterLink>
+        <Navbar />
+      </div>
+    </header>
+    <RouterView />
+    <Footer />
+  </div>
 </template>
 
 <style scoped></style>

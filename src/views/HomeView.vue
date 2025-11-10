@@ -1,20 +1,8 @@
 <script setup lang="ts">
-
-import Navbar from '../components/Navbar.vue';
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-neutral-900 font-sans antialiased">
-    <header class="sticky top-0 bg-white/80 backdrop-blur border-b border-neutral-200">
-      <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
-        <a href="#home" class="font-medium inline-flex items-center gap-2">
-          <span>Abka TacimbiDoombi</span>
-        </a>
-        <Navbar />
-      </div>
-    </header>
-
-    <main id="home" class="mx-auto max-w-5xl px-4">
+    <main class="mx-auto max-w-5xl px-4">
       <!-- Hero -->
       <section class="py-16 sm:py-24">
         <div class="space-y-4">
@@ -74,11 +62,5 @@ import Navbar from '../components/Navbar.vue';
       </section>
     </main>
 
-    <footer class="mt-12 border-t border-neutral-200">
-      <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-neutral-600">
-        <p>© 2025 Abka TacimbiDoombi · GitHub Pages</p>
-      </div>
-    </footer>
-  </div>
 
 </template>
