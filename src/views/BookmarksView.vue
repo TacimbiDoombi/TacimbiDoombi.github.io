@@ -2,7 +2,7 @@
     <!-- 复用 App.vue 提供的主容器，只添加垂直内边距 -->
     <div class="py-16">
         <h1 class="text-3xl font-bold mb-8 text-center">Bookmark Navigation</h1>
-    <div v-for="group in sortedBookmarkGroups" :key="group.title" class="mb-12">
+        <div v-for="group in sortedBookmarkGroups" :key="group.title" class="mb-12">
             <h2 class="text-xl font-semibold mb-4 text-neutral-800">{{ group.title }}</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <a v-for="item in group.items" :key="item.name" :href="item.url" target="_blank" rel="noopener"
